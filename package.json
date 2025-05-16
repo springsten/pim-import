@@ -1,0 +1,22 @@
+{
+  "name": "pim-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "esrun src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "esrun": "^3.2.26",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@cosmicjs/sdk": "^1.5.2",
+    "dotenv": "^16.5.0"
+  }
+}
