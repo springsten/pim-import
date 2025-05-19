@@ -11,12 +11,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/node": "^22.15.18",
+    "@types/node": "^22.15.19",
     "esrun": "^3.2.26",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@cosmicjs/sdk": "^1.5.2",
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "mysql2": "^3.14.1"
   }
 }
