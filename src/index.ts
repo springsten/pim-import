@@ -1,5 +1,10 @@
 import { createBucketClient } from '@cosmicjs/sdk';
 import 'dotenv/config';
+import {
+  getCategoryIdFromDatabase,
+  insertCategory,
+  updateCategory,
+} from './database/database';
 
 // API-variabler (finns i .env):
 const COSMIC_BUCKET_SLUG = process.env.COSMIC_BUCKET_SLUG;
@@ -13,12 +18,34 @@ const cosmic = createBucketClient({
   writeKey: COSMIC_WRITE_KEY!,
 });
 
+// initiera cosmic response
 let cosmic_response = await cosmic.objects
   .find({
-    type: 'products',
+    type: 'categories',
   })
   .sort('created_at asc')
-  .limit(10);
+  .limit(100);
 
-console.log(cosmic_response);
-console.log(cosmic_response.objects);
+for (const pimCategory of cosmic_response.objects) {
+  console.log(pimCategory);
+
+  const categoryIdInDatabase = await getCategoryIdFromDatabase(pimCategory.id);
+  console.log(categoryIdInDatabase);
+
+  if (categoryIdInDatabase === undefined) {
+    // INSERT i sql-databas:
+    await insertCategory(
+      pimCategory.title,
+      pimCategory.metadata.description,
+      pimCategory.id,
+      pimCategory.metadata.active
+    );
+  } else {
+    await updateCategory(
+      categoryIdInDatabase.id,
+      pimCategory.title,
+      pimCategory.metadata.description,
+      pimCategory.active
+    );
+  }
+}
