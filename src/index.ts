@@ -6,6 +6,7 @@ import {
   insertCategory,
   insertProduct,
   updateCategory,
+  updateProduct,
 } from './database/database';
 import { initDb } from './database/db';
 import { exit } from 'process';
@@ -86,6 +87,17 @@ for (const pimProduct of cosmic_response_products.objects) {
       pimProduct.metadata.description
     );
   } else {
-    console.log('Kom inte till insertProduct()');
+    await updateProduct(
+      pimProduct.title,
+      pimProduct.metadata.price,
+      pimProduct.metadata.stocklevel,
+      pimProduct.metadata.category,
+      pimProduct.metadata.popularityfactor,
+      productIdInDatabase.id,
+      pimProduct.metadata.active,
+      pimProduct.metadata.description
+    );
   }
 }
+
+exit();
