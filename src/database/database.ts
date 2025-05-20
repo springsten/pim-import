@@ -28,7 +28,7 @@ export async function getCategoryIdFromDatabase(
 export async function insertCategory(
   title: string,
   description: string,
-  pimid: string,
+  pimId: string,
   active: boolean
 ) {
   // vi hjar ju skapat en koklumn i Products spom heter description2
@@ -36,7 +36,7 @@ export async function insertCategory(
   const conn = await connection;
   await conn.execute(
     'INSERT INTO Category(description,name,pimId,active) VALUES(?,?,?,?)',
-    [description, title, pimid, active]
+    [description, title, pimId, active]
   );
 }
 
@@ -52,6 +52,49 @@ export async function updateCategory(
   const conn = await connection;
   await conn.execute(
     'UPDATE Category SET description=?, name=?, active=? WHERE id=?',
-    [description, title, active, id]
+    [description ?? null, title, active ?? null, id]
+  );
+}
+
+export async function getProductIdFromDatabase(
+  pimId: string
+): Promise<ProductId | undefined> {
+  const conn = await connection;
+
+  const [rows] = await conn.query<ProductId[]>(
+    'SELECT id from Products where pimId=?',
+    [pimId]
+  );
+  if (rows.length == 0) {
+    return undefined;
+  }
+  return rows[0];
+}
+
+export async function insertProduct(
+  title: string,
+  price: number,
+  stockLevel: number,
+  categoryId: string,
+  popularityFactor: number,
+  pimId: string,
+  active: boolean,
+  description: string
+) {
+  const conn = await connection;
+
+  console.log('PF', popularityFactor);
+  await conn.execute(
+    'INSERT INTO Products(title, price, stockLevel, categoryId, popularityFactor, pimId, active, description) VALUES(?,?,?,?,?,?,?,?)',
+    [
+      title,
+      price,
+      stockLevel,
+      categoryId,
+      popularityFactor,
+      pimId,
+      active,
+      description,
+    ]
   );
 }

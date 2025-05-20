@@ -2,9 +2,16 @@ import { createBucketClient } from '@cosmicjs/sdk';
 import 'dotenv/config';
 import {
   getCategoryIdFromDatabase,
+  getProductIdFromDatabase,
   insertCategory,
+  insertProduct,
   updateCategory,
 } from './database/database';
+import { initDb } from './database/db';
+import { exit } from 'process';
+
+// initiera databasen:
+initDb();
 
 // API-variabler (finns i .env):
 const COSMIC_BUCKET_SLUG = process.env.COSMIC_BUCKET_SLUG;
@@ -18,15 +25,16 @@ const cosmic = createBucketClient({
   writeKey: COSMIC_WRITE_KEY!,
 });
 
-// initiera cosmic response
-let cosmic_response = await cosmic.objects
+//initiera cosmic response
+let cosmic_response_categories = await cosmic.objects
   .find({
     type: 'categories',
   })
   .sort('created_at asc')
   .limit(100);
 
-for (const pimCategory of cosmic_response.objects) {
+// Category-funktioner:
+for (const pimCategory of cosmic_response_categories.objects) {
   console.log(pimCategory);
 
   const categoryIdInDatabase = await getCategoryIdFromDatabase(pimCategory.id);
@@ -47,5 +55,37 @@ for (const pimCategory of cosmic_response.objects) {
       pimCategory.metadata.description,
       pimCategory.active
     );
+  }
+
+  console.log('Executed category functions');
+}
+
+let cosmic_response_products = await cosmic.objects
+  .find({
+    type: 'products',
+  })
+  .sort('created_at asc')
+  .limit(100);
+
+for (const pimProduct of cosmic_response_products.objects) {
+  console.log(pimProduct);
+  console.log(pimProduct.metadata.popularityfactor);
+
+  const productIdInDatabase = await getProductIdFromDatabase(pimProduct.id);
+
+  if (productIdInDatabase === undefined) {
+    // INSERT i sql-databas:
+    await insertProduct(
+      pimProduct.title,
+      pimProduct.metadata.price,
+      pimProduct.metadata.stocklevel,
+      pimProduct.metadata.category,
+      pimProduct.metadata.popularityfactor,
+      pimProduct.id,
+      pimProduct.metadata.active,
+      pimProduct.metadata.description
+    );
+  } else {
+    console.log('Kom inte till insertProduct()');
   }
 }
