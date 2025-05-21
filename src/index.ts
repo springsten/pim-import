@@ -88,12 +88,12 @@ for (const pimProduct of cosmic_response_products.objects) {
     );
   } else {
     await updateProduct(
+      productIdInDatabase.id,
       pimProduct.title,
       pimProduct.metadata.price,
       pimProduct.metadata.stocklevel,
       pimProduct.metadata.category,
       pimProduct.metadata.popularityfactor,
-      productIdInDatabase.id,
       pimProduct.metadata.active,
       pimProduct.metadata.description
     );

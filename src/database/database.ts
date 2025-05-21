@@ -100,27 +100,28 @@ export async function insertProduct(
 }
 
 export async function updateProduct(
+  id: number,
   title: string,
   price: number,
   stockLevel: number,
   categoryId: string,
   popularityFactor: number,
-  id: number,
   active: boolean,
   description: string
 ) {
   const conn = await connection;
   await conn.execute(
-    'UPDATE Products SET title=?, price=?, stockLevel=?, categoryId=?, popularityFactor=?, id=?, active=?, description=?',
+    `UPDATE Products SET title=?, price=?, stockLevel=?, categoryId=?, popularityFactor=?, active=?, description=?
+    WHERE id=?`,
     [
       title,
       price,
       stockLevel,
       categoryId,
       popularityFactor,
-      id,
       active,
       description,
+      id,
     ]
   );
 }
