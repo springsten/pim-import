@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "esrun src/index.ts",
+    "add": "esrun src/products/addProducts.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

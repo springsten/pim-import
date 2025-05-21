@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Ultra Soft Bamboo Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 45,
+      "description": "Eco-friendly bamboo toothbrush with ultra-soft bristles for sensitive gums. Made from sustainable materials.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 76,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Charcoal Bristle Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 39,
+      "description": "Manual toothbrush with activated charcoal-infused bristles for natural whitening and bacteria reduction.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 89,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Travel Folding Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 29,
+      "description": "Compact folding toothbrush perfect for travel with medium bristles and antibacterial handle.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 120,
+      "popularityfactor": 6
+    }
+  },
+  {
+    "title": "Ergonomic Grip Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 35,
+      "description": "Manual toothbrush with ergonomic rubber grip handle and precision-angled bristles for better cleaning.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 95,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Kids Animal-Shaped Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 25,
+      "description": "Fun animal-shaped toothbrushes designed for small hands with extra-soft bristles for children.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 110,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Angled Bristle Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 42,
+      "description": "Manual toothbrush with 45-degree angled bristles to reach deep between teeth and along the gum line.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 82,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Natural Wheat Straw Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 32,
+      "description": "Biodegradable wheat straw handle toothbrush with BPA-free nylon bristles for eco-conscious consumers.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 65,
+      "popularityfactor": 6
+    }
+  },
+  {
+    "title": "Silver Infused Antibacterial Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 49,
+      "description": "Manual toothbrush with silver-infused bristles that naturally inhibit bacteria growth between uses.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 58,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Extra Soft Post-Surgery Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 38,
+      "description": "Specially designed extra-soft bristle toothbrush for use after dental surgery or for extremely sensitive gums.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 45,
+      "popularityfactor": 5
+    }
+  },
+  {
+    "title": "3-Sided Manual Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 55,
+      "description": "Innovative 3-sided bristle design that cleans all surfaces of the teeth simultaneously for thorough cleaning.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 70,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Sonic Pro Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 599,
+      "description": "Advanced sonic technology with 40,000 vibrations per minute and 5 cleaning modes. Includes smart timer and pressure sensor.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 50,
+      "popularityfactor": 9
+    }
+  },
+  {
+    "title": "Oscillating Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 499,
+      "description": "Round brush head with oscillating-rotating technology for professional cleaning. Features 3 brushing modes.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 65,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Kids Musical Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 249,
+      "description": "Child-friendly electric toothbrush that plays music for 2 minutes with colorful LED lights and gentle vibrations.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 80,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Smart Bluetooth Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 799,
+      "description": "Bluetooth-connected electric toothbrush with app tracking, personalized brushing feedback, and guided routines.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 40,
+      "popularityfactor": 9
+    }
+  },
+  {
+    "title": "Travel Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 349,
+      "description": "Compact electric toothbrush with travel case and USB charging. 2-week battery life on a single charge.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 75,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Ultra Thin Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 449,
+      "description": "Sleek, minimalist design electric toothbrush with ultra-thin handle and powerful sonic cleaning technology.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 60,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Sensitive Gums Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 549,
+      "description": "Specially designed for sensitive gums with extra gentle modes and ultra-soft bristles. Includes pressure sensor.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 55,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Whitening Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 649,
+      "description": "Electric toothbrush with special whitening mode and blue light technology to help remove stains and brighten teeth.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 45,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Budget Electric Toothbrush",
+    "type": "products",
+    "metadata": {
+      "price": 199,
+      "description": "Affordable electric toothbrush with 2 cleaning modes and built-in timer. Perfect starter brush for first-time users.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 100,
+      "popularityfactor": 6
+    }
+  },
+  {
+    "title": "Ultrasonic Electric Toothbrush Premium",
+    "type": "products",
+    "metadata": {
+      "price": 899,
+      "description": "High-end ultrasonic electric toothbrush with 7 cleaning modes, UV sanitizing charging base, and premium travel case.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 35,
+      "popularityfactor": 9
+    }
+  },
+  {
+    "title": "Mint Waxed Dental Floss",
+    "type": "products",
+    "metadata": {
+      "price": 29,
+      "description": "Classic waxed dental floss with refreshing mint flavor. Slides easily between teeth for effective cleaning.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 120,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Expanding Charcoal Dental Floss",
+    "type": "products",
+    "metadata": {
+      "price": 35,
+      "description": "Innovative floss that expands when used to clean more surface area. Infused with activated charcoal for stain removal.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 85,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Biodegradable Bamboo Fiber Floss",
+    "type": "products",
+    "metadata": {
+      "price": 42,
+      "description": "Eco-friendly dental floss made from bamboo fibers with natural candelilla wax. Comes in a refillable glass container.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 70,
+      "popularityfactor": 6
+    }
+  },
+  {
+    "title": "Professional Dental Tape",
+    "type": "products",
+    "metadata": {
+      "price": 32,
+      "description": "Wider, flat dental tape specially designed for people with wider spaces between teeth or dental work.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 90,
+      "popularityfactor": 6
+    }
+  },
+  {
+    "title": "Floss Picks with Fluoride",
+    "type": "products",
+    "metadata": {
+      "price": 45,
+      "description": "Convenient floss picks with fluoride coating and mint flavor. Pack of 100 in a recyclable container.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 150,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Water Flosser Professional",
+    "type": "products",
+    "metadata": {
+      "price": 599,
+      "description": "Advanced water flosser with 10 pressure settings, 7 specialized tips, and large water reservoir for whole family use.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 40,
+      "popularityfactor": 9
+    }
+  },
+  {
+    "title": "Portable Cordless Water Flosser",
+    "type": "products",
+    "metadata": {
+      "price": 399,
+      "description": "Travel-friendly cordless water flosser with 3 pressure modes and collapsible design. Waterproof and USB rechargeable.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 65,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Cinnamon Unwaxed Natural Floss",
+    "type": "products",
+    "metadata": {
+      "price": 38,
+      "description": "Unwaxed natural floss with cinnamon essential oil. Ideal for those preferring a floss without synthetic wax coating.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 75,
+      "popularityfactor": 5
+    }
+  },
+  {
+    "title": "Children's Fruit-Flavored Floss",
+    "type": "products",
+    "metadata": {
+      "price": 35,
+      "description": "Colorful, fruit-flavored dental floss specifically designed to encourage children to develop good flossing habits.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 95,
+      "popularityfactor": 6
+    }
+  },
+  {
+    "title": "Interdental Brush Set",
+    "type": "products",
+    "metadata": {
+      "price": 49,
+      "description": "Set of 5 different sized interdental brushes for cleaning between teeth and around braces or dental work.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 85,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Whitening Fluoride Toothpaste",
+    "type": "products",
+    "metadata": {
+      "price": 45,
+      "description": "Advanced whitening formula with fluoride protection. Removes surface stains while preventing cavities.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 120,
+      "popularityfactor": 9
+    }
+  },
+  {
+    "title": "Natural Activated Charcoal Toothpaste",
+    "type": "products",
+    "metadata": {
+      "price": 59,
+      "description": "Fluoride-free charcoal toothpaste with natural ingredients. Helps remove stains and toxins without harsh chemicals.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 85,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Sensitive Teeth Relief Toothpaste",
+    "type": "products",
+    "metadata": {
+      "price": 52,
+      "description": "Specially formulated for sensitive teeth with potassium nitrate. Builds protection against pain triggers while cleaning.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 95,
+      "popularityfactor": 8
+    }
+  },
+  {
+    "title": "Gum Health Therapeutic Toothpaste",
+    "type": "products",
+    "metadata": {
+      "price": 49,
+      "description": "Therapeutic formula designed to improve gum health, reduce inflammation, and prevent gingivitis. Contains antibacterial agents.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 80,
+      "popularityfactor": 7
+    }
+  },
+  {
+    "title": "Kids Strawberry Fluoride Toothpaste",
+    "type": "products",
+    "metadata": {
+      "price": 35,
+      "description": "Kid-friendly strawberry flavor with fluoride protection. Free from artificial colors and with lower abrasivity for young teeth.",
+      "category": "68270d40272d988c7053578c",
+      "active": true,
+      "stocklevel": 110,
+      "popularityfactor": 7
+    }
+  }
+]
