@@ -1,5 +1,6 @@
 import { createBucketClient } from '@cosmicjs/sdk';
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // API-variabler (finns i .env):
 const COSMIC_BUCKET_SLUG = process.env.COSMIC_BUCKET_SLUG;
