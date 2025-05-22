@@ -36,10 +36,7 @@ let cosmic_response_categories = await cosmic.objects
 
 // Category-funktioner:
 for (const pimCategory of cosmic_response_categories.objects) {
-  console.log(pimCategory);
-
   const categoryIdInDatabase = await getCategoryIdFromDatabase(pimCategory.id);
-  console.log(categoryIdInDatabase);
 
   if (categoryIdInDatabase === undefined) {
     // INSERT i sql-databas:
@@ -58,7 +55,7 @@ for (const pimCategory of cosmic_response_categories.objects) {
     );
   }
 
-  console.log('Executed category functions');
+  console.log('Executed category imports');
 }
 
 let cosmic_response_products = await cosmic.objects
@@ -69,9 +66,6 @@ let cosmic_response_products = await cosmic.objects
   .limit(100);
 
 for (const pimProduct of cosmic_response_products.objects) {
-  console.log(pimProduct);
-  console.log(pimProduct.metadata.popularityfactor);
-
   const productIdInDatabase = await getProductIdFromDatabase(pimProduct.id);
 
   if (productIdInDatabase === undefined) {
@@ -98,6 +92,7 @@ for (const pimProduct of cosmic_response_products.objects) {
       pimProduct.metadata.description
     );
   }
+  console.log('Executed product imports');
 }
 
 exit();
