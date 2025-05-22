@@ -1,5 +1,5 @@
 import { createBucketClient } from '@cosmicjs/sdk';
-import 'dotenv/config';
+
 import {
   getCategoryIdFromDatabase,
   getProductIdFromDatabase,
@@ -10,6 +10,8 @@ import {
 } from './database/database';
 import { initDb } from './database/db';
 import { exit } from 'process';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // initiera databasen:
 initDb();
