@@ -1,4 +1,4 @@
-import { createBucketClient } from '@cosmicjs/sdk';
+import { createBucketClient } from "@cosmicjs/sdk";
 
 import {
   getCategoryIdFromDatabase,
@@ -7,10 +7,10 @@ import {
   insertProduct,
   updateCategory,
   updateProduct,
-} from './database/database';
-import { initDb } from './database/db';
-import { exit } from 'process';
-import dotenv from 'dotenv';
+} from "./database/database";
+import { initDb } from "./database/db";
+import { exit } from "process";
+import dotenv from "dotenv";
 dotenv.config();
 
 // initiera databasen:
@@ -31,9 +31,9 @@ const cosmic = createBucketClient({
 //initiera cosmic response
 let cosmic_response_categories = await cosmic.objects
   .find({
-    type: 'categories',
+    type: "categories",
   })
-  .sort('created_at asc')
+  .sort("created_at asc")
   .limit(100);
 
 // Category-funktioner:
@@ -57,14 +57,14 @@ for (const pimCategory of cosmic_response_categories.objects) {
     );
   }
 
-  console.log('Executed category imports');
+  console.log("Executed category imports");
 }
 
 let cosmic_response_products = await cosmic.objects
   .find({
-    type: 'products',
+    type: "products",
   })
-  .sort('created_at asc')
+  .sort("created_at asc")
   .limit(100);
 
 for (const pimProduct of cosmic_response_products.objects) {
@@ -94,7 +94,7 @@ for (const pimProduct of cosmic_response_products.objects) {
       pimProduct.metadata.description
     );
   }
-  console.log('Executed product imports');
+  console.log("Executed product imports");
 }
 
 exit();
